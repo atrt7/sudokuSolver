@@ -52,7 +52,7 @@ bool possible(int x, int y, int n) {
     int colStart, rowStart;
 
     if (matrix[y][x] != 0) {
-        printf("Fuck\n");
+        printf("Error!\n");
         return false;
     }
 
