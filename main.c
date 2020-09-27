@@ -104,7 +104,6 @@ bool solvePuzzle() {
 }
 
 void assignToPuzzleGrid(char *buff) {
-    //puzzle thePuzzle = *thePuzzle1;
     int i = 0;
     int j = 0;
     int k = 0;
