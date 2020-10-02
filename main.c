@@ -17,7 +17,7 @@ char *removeSpaces(char *buff, int size) {
     return buff;
 }
 
-bool findUnassignedLocation( int *row, int *col) {
+bool findUnassignedLocation(int *row, int *col) {
     for(int i=0; i<9; i++) {
         for(int j=0; j<9; j++) {
             if(matrix[i][j] == 0) {
