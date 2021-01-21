@@ -17,7 +17,7 @@ char *removeSpaces(char *buff, int size) {
     return buff;
 }
 
-bool findUnassignedLocation( int *row, int *col) {
+bool findUnassignedLocation(int *row, int *col) {
     for(int i=0; i<9; i++) {
         for(int j=0; j<9; j++) {
             if(matrix[i][j] == 0) {
@@ -121,6 +121,10 @@ void assignToPuzzleGrid(char *buff) {
 char* getPuzzleFromFile() {
     char c;
     char *buff = malloc(255 * sizeof(char));
+    if(buff == NULL) {
+        printf("Something broke idk lmao");
+        return NULL;
+    }
     int k = 0;
 
     FILE *fp = fopen("puzzle.txt", "r");
