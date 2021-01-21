@@ -147,7 +147,7 @@ char* getPuzzleFromFile() {
     return buff;
 }
 
-int main() {
+int main(int argc, char **argv) {
     char *sudoku;
 
     sudoku = getPuzzleFromFile();
@@ -159,6 +159,8 @@ int main() {
     } else {
         printf("\nNo solution or error!\n");
     }
+
+    free(sudoku);
 
     return 0;
 }
